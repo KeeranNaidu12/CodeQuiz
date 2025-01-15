@@ -13,16 +13,14 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button play,leaderboard,exit;
+    Button play,exit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-
         play = findViewById(R.id.button);
-        leaderboard = findViewById(R.id.button2);
         exit = findViewById(R.id.button3);
 
         play.setOnClickListener(new View.OnClickListener() {

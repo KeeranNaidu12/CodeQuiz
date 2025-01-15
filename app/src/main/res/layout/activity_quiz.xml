@@ -7,4 +7,175 @@
     android:layout_height="match_parent"
     tools:context=".Quiz">
 
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="245dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="421dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/java_logo_icon"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/prompt"
+        android:layout_width="288dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="62dp"
+        android:text="What programming language is this?"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="265dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prompt"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/q11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Python" />
+
+        <RadioButton
+            android:id="@+id/q12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JavaScript" />
+
+        <RadioButton
+            android:id="@+id/q13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Java" />
+
+        <RadioButton
+            android:id="@+id/q14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HTML" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/questionCount"
+        android:layout_width="172dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="209dp"
+        android:layout_marginBottom="678dp"
+        android:text="Question 1/6"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="666dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="17dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="244dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintBottom_toTopOf="@+id/prompt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionCount"
+        app:srcCompat="@drawable/binary_tree_v2" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="375dp"
+        android:layout_height="216dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="399dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fifo_property_in_queue" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="401dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/images" />
+
+    <ImageView
+        android:id="@+id/image5"
+        android:layout_width="284dp"
+        android:layout_height="274dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="378dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dijkstras_algorithm6" />
+
+    <ImageView
+        android:id="@+id/image6"
+        android:layout_width="319dp"
+        android:layout_height="224dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="361dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/__5zlci3sur0zm_qlzoadv8q" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
