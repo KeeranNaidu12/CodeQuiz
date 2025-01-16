@@ -7,4 +7,47 @@
     android:layout_height="match_parent"
     tools:context=".ResultsScreen">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="179dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="622dp"
+        android:text="Final Results"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultsDisplay"
+        android:layout_width="252dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="171dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="483dp"
+        android:text="Your final score is "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/returnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="556dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="127dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
