@@ -82,11 +82,16 @@ public class Quiz extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                switchImages(images, images[counter]);
-                counter++;
-                questionCount.setText("Question " + counter + "/6");
-                questionCounter++;
-                switchQuestion(questions[questionCounter]);
+                if(counter < 6) {
+                    switchImages(images, images[counter]);
+                    counter++;
+                    questionCount.setText("Question " + counter + "/6");
+                    questionCounter++;
+                    switchQuestion(questions[questionCounter]);
+                }
+                else{
+                    Intent
+                }
             }
         });
 
