@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -102,24 +103,27 @@ public class Quiz extends AppCompatActivity {
             public void onClick(View view) {
 
                     int possibleAnswer = questionSet.getCheckedRadioButtonId();
-                    RadioButton chosenAnswer = findViewById(possibleAnswer);
-                    String finalizedAnswer = chosenAnswer.getText().toString();
-                    correct = checkAnswer(finalizedAnswer,correctAnswers[questionCounter],correct);
-                if(counter < 6) {
-                    switchImages(images, images[counter]);
-                    counter++;
-                    questionCount.setText("Question " + counter + "/6");
-                    questionCounter++;
+                    if(possibleAnswer != -1) {
+                        RadioButton chosenAnswer = findViewById(possibleAnswer);
+                        String finalizedAnswer = chosenAnswer.getText().toString();
+                        correct = checkAnswer(finalizedAnswer, correctAnswers[questionCounter], correct);
+                        if (counter < 6) {
+                            switchImages(images, images[counter]);
+                            counter++;
+                            questionCount.setText("Question " + counter + "/6");
+                            questionCounter++;
 
-                    switchOptions(answers,questionCounter);
-                    switchQuestion(questions[questionCounter]);
-                }
-
-                else{
-                    Intent intent = new Intent(Quiz.this,ResultsScreen.class);
-                    intent.putExtra("total",correct);
-                    startActivity(intent);
-                }
+                            switchOptions(answers, questionCounter);
+                            switchQuestion(questions[questionCounter]);
+                            questionSet.clearCheck();
+                        } else {
+                            Intent intent = new Intent(Quiz.this, ResultsScreen.class);
+                            intent.putExtra("total", correct);
+                            startActivity(intent);
+                        }
+                    }else{
+                        Toast.makeText(Quiz.this,"Please select an answer!",Toast.LENGTH_SHORT).show();
+                    }
 
             }
         });
